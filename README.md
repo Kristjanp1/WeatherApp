@@ -2,6 +2,9 @@
 
 A Spring/Angular application that fetches data from Estonian weather service and displays it within the angular application.
 
+![Alt Text](https://i.gyazo.com/4a906d198fa6a54abb9ef830d71f4a89.gif)
+
+
 ## Quickstart
 
 - Clone the repo.
