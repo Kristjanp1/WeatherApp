@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<forecasts>
+    <forecast date="2022-11-07">
+        <night>
+            <phenomenon>Light shower</phenomenon>
+            <tempmin>2</tempmin>
+            <tempmax>10</tempmax>
+            <text>Variably cloudy. Rain in many places, higher probability is in western and northern part of the country. Southwest, south wind 5-12, on coast in gusts up to 17 m/s. Air temperature 2..8, on islands coast up to 10°C.</text>
+            <place>
+                <name>Harku</name>
+                <phenomenon>Moderate shower</phenomenon>
+                <tempmin>8</tempmin>
+            </place>
+            <place>
+                <name>Jõhvi</name>
+                <phenomenon>Light rain</phenomenon>
+                <tempmin>6</tempmin>
+            </place>
+            <place>
+                <name>Tartu</name>
+                <phenomenon>Cloudy with clear spells</phenomenon>
+                <tempmin>5</tempmin>
+            </place>
+            <place>
+                <name>Pärnu</name>
+                <phenomenon>Light rain</phenomenon>
+                <tempmin>8</tempmin>
+            </place>
+            <place>
+                <name>Kuressaare</name>
+                <phenomenon>Moderate rain</phenomenon>
+                <tempmin>9</tempmin>
+            </place>
+            <place>
+                <name>Türi</name>
+                <phenomenon>Light rain</phenomenon>
+                <tempmin>7</tempmin>
+            </place>
+            <wind>
+                <name>Kuusiku</name>
+                <direction>Southwest wind</direction>
+                <speedmin>5</speedmin>
+                <speedmax>9</speedmax>
+                <gust>13</gust>
+            </wind>
+            <wind>
+                <name>Väike-Maarja</name>
+                <direction>Southwest wind</direction>
+                <speedmin>5</speedmin>
+                <speedmax>8</speedmax>
+                <gust>12</gust>
+            </wind>
+            <wind>
+                <name>Võrtsjärv</name>
+                <direction>Southwest wind</direction>
+                <speedmin>5</speedmin>
+                <speedmax>8</speedmax>
+                <gust>11</gust>
+            </wind>
+            <sea>Forecast for Baltic Sea valid 24 hours from 13:00 UTC Nov 6 to 13:00 UTC Nov 7, 2022.
+
+                Weather summary: Trough of Low is moving over Baltic Sea to northeast, tomorrow by day another Trough of Low is approaching from Scandinavia.
+
+                Warnings:
+                Northern Baltic: southwest, south 13, in gusts 18 m/s. Wave height 1.5-3 m.
+
+                Northern Baltic: southwest, south 7-13, in gusts 18 m/s, tomorrow by day 9-15, in gusts up to 20 m/s. Wave height 1.5-3 m, tomorrow by day 2-4.5 m. Locally rain showers. Visibility from good to moderate.
+
+                Northern Gulf of Riga, Moonsund, Gulf of Finland: southwest, south 5-11, in gusts up to 14 m/s, at night increasing 6-13, in gusts 15-18 m/s. Wave height at night 1-3 m, in Moonsund 0.6-1.2 m. Locally rain showers. Visibility from good to moderate.</sea>
+            <peipsi>Southwest, south wind 6-10, in gusts 13 m/s. Wave height 0.6-1.2 m. Locally some rain possible. Visibility from good to moderate. Air temperature 4..6°C.</peipsi>
+        </night>
+        <day>
+            <phenomenon>Light shower</phenomenon>
+            <tempmin>5</tempmin>
+            <tempmax>10</tempmax>
+            <text>Variably cloudy. In the forenoon in northern Estonia locally rain, towards evening a new area of rain arriving to the western islands and from there spreading to the mainland. Southwest, south wind 6-13, on coast in gusts up to 18 m/s. Air temperature 5..10°C.</text>
+            <place>
+                <name>Harku</name>
+                <phenomenon>Variable clouds</phenomenon>
+                <tempmax>8</tempmax>
+            </place>
+            <place>
+                <name>Jõhvi</name>
+                <phenomenon>Light shower</phenomenon>
+                <tempmax>7</tempmax>
+            </place>
+            <place>
+                <name>Tartu</name>
+                <phenomenon>Variable clouds</phenomenon>
+                <tempmax>7</tempmax>
+            </place>
+            <place>
+                <name>Pärnu</name>
+                <phenomenon>Variable clouds</phenomenon>
+                <tempmax>8</tempmax>
+            </place>
+            <place>
+                <name>Kuressaare</name>
+                <phenomenon>Light shower</phenomenon>
+                <tempmax>10</tempmax>
+            </place>
+            <place>
+                <name>Türi</name>
+                <phenomenon>Variable clouds</phenomenon>
+                <tempmax>7</tempmax>
+            </place>
+            <wind>
+                <name>Kuusiku</name>
+                <direction>South wind</direction>
+                <speedmin>5</speedmin>
+                <speedmax>9</speedmax>
+                <gust>13</gust>
+            </wind>
+            <wind>
+                <name>Väike-Maarja</name>
+                <direction>South wind</direction>
+                <speedmin>5</speedmin>
+                <speedmax>8</speedmax>
+                <gust>12</gust>
+            </wind>
+            <wind>
+                <name>Võrtsjärv</name>
+                <direction>South wind</direction>
+                <speedmin>5</speedmin>
+                <speedmax>8</speedmax>
+                <gust>11</gust>
+            </wind>
+            <sea>DADDDDDDDDDADDDDDDDDDDDADADADADADADAD</sea>
+            <peipsi>Southwest, south 6-10, in gusts 13 m/s. Wave height 0.6-1.2 m. Mainly dry. Visibility good. Air temperature 4..6°C.</peipsi>
+        </day>
+    </forecast>
+    <forecast date="2022-11-08">
+        <night>
+            <phenomenon>Moderate rain</phenomenon>
+            <tempmin>3</tempmin>
+            <tempmax>9</tempmax>
+            <text>Cloudy. Rain spreading over the land towards east. South, southwest wind 5-10, in gusts to 13, on coasts up to 18 m/s, after midnight veering to west from islands. Air temperature 3..9°C.</text>
+        </night>
+        <day>
+            <phenomenon>Moderate shower</phenomenon>
+            <tempmin>8</tempmin>
+            <tempmax>11</tempmax>
+            <text>Cloudy with some clear spells. In the forenoon on islands locally rain, in the mainland rain in many places. In the afternoon probability of rain decreasing in continent. In late evening new area of rain on islands. West, northwest, before noon in eastern part also southwest wind 5-10, in gusts to 13, on coasts up to 18 m/s, by evening decreasing. Air temperature 8..11°C.</text>
+        </day>
+    </forecast>
+    <forecast date="2022-11-09">
+        <night>
+            <phenomenon>Moderate rain</phenomenon>
+            <tempmin>4</tempmin>
+            <tempmax>10</tempmax>
+            <text>Cloudy. Rain spreading from islands to the mainland. Wind turning from west to south 2-8, on coast in gusts to 11 m/s, after midnight southwest increasing from islands 5-10, in gusts to 14 m/s. Air temperature 4..10°C.</text>
+        </night>
+        <day>
+            <phenomenon>Moderate shower</phenomenon>
+            <tempmin>9</tempmin>
+            <tempmax>12</tempmax>
+            <text>Cloudy with some clear spells. Rain in many places. Southwest wind 5-10, in gusts to 14 m/s. Air temperature 9..12°C.</text>
+        </day>
+    </forecast>
+    <forecast date="2022-11-10">
+        <night>
+            <phenomenon>Moderate shower</phenomenon>
+            <tempmin>6</tempmin>
+            <tempmax>10</tempmax>
+            <text>Cloudy with some clear spells. Rain in many places. Southwest wind 3-9, on coast sin gusts to 12 m/s. Air temperature 6..10°C.</text>
+        </night>
+        <day>
+            <phenomenon>Moderate shower</phenomenon>
+            <tempmin>9</tempmin>
+            <tempmax>12</tempmax>
+            <text>Cloudy with some clear spells. Rain in many places. Southwest, west wind 2-8, on coast sin gusts to 11 m/s. Air temperature 9..12°C.</text>
+        </day>
+    </forecast>
+</forecasts>

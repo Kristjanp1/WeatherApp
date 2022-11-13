@@ -1,0 +1,76 @@
+<div class="container px-1 px-sm-4 py-5 mx-auto">
+  <div class="row d-flex justify-content-center">
+    <div *ngIf="(weatherData$ | async) as data else placeholder">
+      <div class="card pt-4 border-0">
+        <div class="text-center">
+          <a class="arrow arrow-left" (click)="previousPlace()" [class.hidden]="!selectedForecastData?.placeList">🡨</a>
+          <a class="arrow arrow-right" (click)="nextPlace()" [class.hidden]="!selectedForecastData?.placeList">🡪</a>
+          <h4 class="mb-0">{{selectedPlace ? selectedPlace.locationName : "All"}}</h4>
+          <span>{{isDaySelected ? "Day" : "Night"}}</span>
+        </div>
+        <div class=" mt-3 mb-4">
+          <div class="gallery">
+            <img
+              class="time-image"
+              src="/assets/moon.png"
+              alt="moon"
+              [class.not-selected]="isDaySelected"
+              (click)="switchToNight()"
+            >
+            <img class="time-image"
+                 src="assets/sun.png"
+                 alt="sun"
+                 [class.not-selected]="!isDaySelected"
+                 (click)="switchToDay()"
+            >
+          </div>
+        </div>
+        <div class="row mx-2 details-row">
+          <div class="col-6 text-left">
+            <strong class="">Phenomenon</strong>
+            <p class="mt-1"
+               style="font-size: 20px; font-weight: 500">{{this.selectedPlace ? selectedPlace.phenomenon : selectedForecastData?.phenomenon}}</p>
+          </div>
+          <div class="col-6 text-right">
+            <strong>Description</strong>
+            <p style="font-size: 15px">{{selectedForecastData?.text}}</p>
+          </div>
+
+        </div>
+        <div class="row d-flex px-3 mt-auto text-center" *ngIf="isDaySelected">
+          <div class="d-flex flex-column block"
+               [class.block-active]="day.date == selectedForecast?.date"
+               *ngFor="let day of data"
+               (click)="switchDate(day)"
+          >
+            <small class="text-muted mb-0">{{day.date | date}}</small>
+            <div class="text-center"><img class="symbol-img" src="https://i.imgur.com/BeWfUuG.png"></div>
+            <h6><strong>{{day.dayData.tempMin}} - {{day.dayData.tempMax}}&#176;C</strong></h6>
+          </div>
+
+        </div>
+        <div class="row d-flex px-3 mt-auto text-center" *ngIf="!isDaySelected">
+          <div class="d-flex flex-column block"
+               [class.block-active]="day.date == selectedForecast?.date"
+               *ngFor="let day of data"
+               (click)="switchDate(day)"
+          >
+            <small class="text-muted mb-0">{{day.date | date}}</small>
+            <div
+              class="text-center block-img"
+            ><img class="symbol-img" src="https://i.imgur.com/BeWfUuG.png"></div>
+            <h6><strong>{{day.nightData.tempMin}} - {{day.nightData.tempMax}}&#176;C</strong></h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ng-template #placeholder>
+      <div class="card pt-4 border-0 placeholder">
+        <div class="lds-ripple">
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </ng-template>
+  </div>
+</div>
