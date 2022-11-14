@@ -35,9 +35,9 @@ public class WeatherController {
         try (final CloseableHttpClient client = HttpClients.createDefault()) {
             HttpGet httpGet = new HttpGet(uri);
             ObjectMapper objectMapper =  new ObjectMapper();
-            httpGet.addHeader("Accept-Encoding", "br");
-            httpGet.addHeader("Content-Type", "application/xml");
-            httpGet.addHeader("Accept", "application/xml");
+            httpGet.setHeader("Accept-Encoding", "br");
+            httpGet.setHeader("Content-Type", "application/xml; charset=utf-8");
+            httpGet.setHeader("Accept", "application/xml");
             HttpResponse httpResponse = client.execute(httpGet);
 
             String responseAsString = getResponseBody(httpResponse);
@@ -56,9 +56,9 @@ public class WeatherController {
             StringBuilder result = new StringBuilder();
             String line = "";
             if (httpResponse.getLastHeader("content-encoding").getValue().equals("br")) {
-                rd = new BufferedReader(new InputStreamReader(new BrotliInputStream(httpResponse.getEntity().getContent())));
+                rd = new BufferedReader(new InputStreamReader(new BrotliInputStream(httpResponse.getEntity().getContent()),StandardCharsets.UTF_8));
             } else {
-                rd = new BufferedReader(new InputStreamReader(httpResponse.getEntity().getContent()));
+                rd = new BufferedReader(new InputStreamReader(httpResponse.getEntity().getContent(),StandardCharsets.UTF_8));
             }
             while ((line = rd.readLine()) != null) {
                 result.append(line);
